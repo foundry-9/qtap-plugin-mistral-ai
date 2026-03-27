@@ -1,9 +1,9 @@
 {
   "$schema": "https://quilltap.io/schemas/plugin-manifest.json",
-  "name": "qtap-plugin-mistral-ai",
+  "name": "@quilltap/qtap-plugin-mistral-ai",
   "title": "Mistral AI",
   "description": "Integration with Mistral AI for chat completions, reasoning, vision, and embeddings",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": {
     "name": "csebold"
   },

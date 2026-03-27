@@ -1,6 +1,6 @@
 {
-  "name": "qtap-plugin-mistral-ai",
-  "version": "1.0.0",
+  "name": "@quilltap/qtap-plugin-mistral-ai",
+  "version": "1.0.1",
   "description": "Mistral AI provider integration for Quilltap",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -24,6 +24,9 @@
   ],
   "author": "csebold",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/csebold/qtap-plugin-mistral-ai"

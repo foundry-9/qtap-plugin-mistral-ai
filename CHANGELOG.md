@@ -1,4 +1,9 @@
-# Changelog for qtap-plugin-mistral-ai
+# Changelog for @quilltap/qtap-plugin-mistral-ai
+
+## 1.0.1
+
+- Rename package to `@quilltap/qtap-plugin-mistral-ai` for scoped npm publishing
+- Add `publishConfig.access: "public"` for npm registry compatibility
 
 ## 1.0.0
 
