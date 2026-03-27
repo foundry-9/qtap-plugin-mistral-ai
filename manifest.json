@@ -1,0 +1,54 @@
+{
+  "$schema": "https://quilltap.io/schemas/plugin-manifest.json",
+  "name": "qtap-plugin-mistral-ai",
+  "title": "Mistral AI",
+  "description": "Integration with Mistral AI for chat completions, reasoning, vision, and embeddings",
+  "version": "1.0.0",
+  "author": {
+    "name": "csebold"
+  },
+  "license": "MIT",
+  "main": "dist/index.js",
+  "compatibility": {
+    "quilltapVersion": ">=1.7.0",
+    "nodeVersion": ">=18.0.0"
+  },
+  "capabilities": ["LLM_PROVIDER"],
+  "category": "PROVIDER",
+  "typescript": true,
+  "frontend": "REACT",
+  "styling": "TAILWIND",
+  "enabledByDefault": true,
+  "status": "STABLE",
+  "keywords": ["mistral", "llm", "chat", "ai", "reasoning", "embeddings"],
+  "providerConfig": {
+    "providerName": "MISTRAL",
+    "displayName": "Mistral AI",
+    "description": "Chat completions, reasoning models, vision, and embeddings via Mistral AI",
+    "abbreviation": "MIS",
+    "colors": {
+      "bg": "bg-orange-100",
+      "text": "text-orange-800",
+      "icon": "text-orange-600"
+    },
+    "requiresApiKey": true,
+    "requiresBaseUrl": false,
+    "apiKeyLabel": "Mistral AI API Key",
+    "capabilities": {
+      "chat": true,
+      "imageGeneration": false,
+      "embeddings": true,
+      "webSearch": false
+    },
+    "attachmentSupport": {
+      "supported": true,
+      "mimeTypes": ["image/jpeg", "image/png", "image/gif", "image/webp"],
+      "description": "Images (JPEG, PNG, GIF, WebP)"
+    }
+  },
+  "permissions": {
+    "network": ["api.mistral.ai"],
+    "userData": false,
+    "database": false
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "name": "qtap-plugin-mistral-ai",
+  "version": "1.0.0",
+  "description": "Mistral AI provider integration for Quilltap",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "manifest.json",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "node esbuild.config.mjs && npm run copy-manifest",
+    "copy-manifest": "cp manifest.json dist/",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "quilltap",
+    "quilltap-plugin",
+    "llm",
+    "ai",
+    "provider",
+    "mistral"
+  ],
+  "author": "csebold",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/csebold/qtap-plugin-mistral-ai"
+  },
+  "peerDependencies": {
+    "react": "^19.2.4"
+  },
+  "dependencies": {
+    "@quilltap/plugin-types": "^1.18.0",
+    "@quilltap/plugin-utils": "^1.7.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.14",
+    "esbuild": "^0.27.4",
+    "typescript": "^6.0.2"
+  }
+}
